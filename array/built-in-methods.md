@@ -151,6 +151,7 @@ arr.filter((item, index, array) => { ... });
 ```
 ---
 ## **Array.prototype.find()**
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.find](https://caniuse.com/#feat=array-findl)
 
 Verilen koşulu sağlayan ilk dizi elemanını döndürür.
 
