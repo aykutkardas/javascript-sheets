@@ -150,3 +150,21 @@ arr.filter((item, index, array) => { ... });
 // [4, 5]
 ```
 ---
+## **Array.prototype.find()**
+
+Verilen koşulu sağlayan ilk dizi elemanını döndürür.
+
+### **Sözdizimi**
+```
+arr.find((item, index, array) => { ... });
+```
+
+### **Örnek**
+```js
+[1, 2, 3, 4, 5].find(n => n > 3);
+// 4
+
+[1, 2, 3, 4, 5].find(n => n > 5);
+// undefined
+```
+---
