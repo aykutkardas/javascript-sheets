@@ -48,7 +48,7 @@ Array.of(1, 2, 3);
 // [1, 2, 3]
 ```
 ---
-## **Array.concat()**
+## **Array.prototype.concat()**
 
 İki veya daha fazla diziyi birleştirir. Mevcut dizileri değiştirmez, yeni bir dizi döndürür.
 
@@ -60,7 +60,7 @@ arr1.concat(arr2);
 // [1, 2, 3, "a", "b", "c"]
 ```
 ---
-## **Array.copyWithin()**
+## **Array.prototype.copyWithin()**
 > IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.copyWithin](https://caniuse.com/#feat=mdn-javascript_builtins_array_copywithin)
 
 Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu değişmez.
@@ -82,7 +82,7 @@ arr.copyWithin(0, 3, 4);
 // [4, 2, 3, 4, 5]
 ```
 ---
-## **Array.entries()**
+## **Array.prototype.entries()**
 > IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.entries](https://caniuse.com/#feat=mdn-javascript_builtins_array_entries)
 
 Dizideki her eleman için indis ve değer çiftini içeren bir Array Iterator nesnesi döndürür.
@@ -98,7 +98,7 @@ iterator.next().value;
 // [1, "b"]
 ```
 ---
-## **Array.every()**
+## **Array.prototype.every()**
 
 Dizide ki tüm elemanların uygulanan koşulu sağlayıp sağlamadığını kontrol etmeyi sağlar. Boolean bir değer döndürür.
 
@@ -112,7 +112,7 @@ arr.every(item => item < 3);
 // false
 ```
 ---
-## **Array.fill()**
+## **Array.prototype.fill()**
 > IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.fill](https://caniuse.com/#feat=mdn-javascript_builtins_array_fill)
 
 Bir dizinin belirtilen elemanlarının verilen bir değer ile doldurmayı sağlar. Dizinin kendisini değiştirir ve değişen diziyi return eder.
@@ -125,7 +125,7 @@ Bir dizinin belirtilen elemanlarının verilen bir değer ile doldurmayı sağla
 
 - Üçüncü parametre doldurmanın biteceği indistir. Değer verilmezse dizin uzunluğunu alır. *(Opsiyonel)*
 
-```js
+```js 
 [1, 2, 3, 4, 5].fill(0);
 // [0, 0, 0, 0, 0]
 
