@@ -67,11 +67,11 @@ Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu
 
 Üç parametre alır.
 
-- İlki yapıştırmaya başlanacak indis. Negatif değer verilirse sondan saymaya başlar.
+- İlki yapıştırmaya başlanacak indeks. Negatif değer verilirse sondan saymaya başlar.
 
-- İkincisi kopyalamanın başlayacağı indis. Değer verilmezse 0 kabul edilir. *(Opsiyonel)*
+- İkincisi kopyalamanın başlayacağı indeks. Değer verilmezse 0 kabul edilir. *(Opsiyonel)*
  
-- Üçüncüsü kopyalamanın sonlanacağı indis. Değer verilmezse dizinin son indisini alır. *(Opsiyonel)*
+- Üçüncüsü kopyalamanın sonlanacağı indeks. Değer verilmezse dizinin son indeksini alır. *(Opsiyonel)*
 
 ```js
 [1, 2, 3, 4, 5].copyWithin(-2);
@@ -84,7 +84,7 @@ Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu
 ## **Array.prototype.entries()**
 > IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.entries](https://caniuse.com/#feat=mdn-javascript_builtins_array_entries)
 
-Dizideki her eleman için indis ve değer çiftini içeren bir Array Iterator nesnesi döndürür.
+Dizideki her eleman için indeks ve değer çiftini içeren bir Array Iterator nesnesi döndürür.
 
 ```js
 const arr = ["a", "b"];
@@ -120,9 +120,9 @@ Bir dizinin belirtilen elemanlarının verilen bir değer ile doldurmayı sağla
 
 - İlki doldurulacak değerdir.
 
-- İkinci parametre doldurmanın başlayacağı indisdir. Değer verilmezse 0 değerini alır. *(Opsiyonel)*
+- İkinci parametre doldurmanın başlayacağı indeks. Değer verilmezse 0 değerini alır. *(Opsiyonel)*
 
-- Üçüncü parametre doldurmanın biteceği indistir. Değer verilmezse dizin uzunluğunu alır. *(Opsiyonel)*
+- Üçüncü parametre doldurmanın biteceği indeks. Değer verilmezse dizin uzunluğunu alır. *(Opsiyonel)*
 
 ```js 
 [1, 2, 3, 4, 5].fill(0);
@@ -172,7 +172,7 @@ arr.find((item, index, array) => { ... });
 ## **Array.prototype.findIndex()**
 > IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.findIndex](https://caniuse.com/#feat=mdn-javascript_builtins_array_findindex)
 
-Verilen koşulu sağlayan ilk dizi elemanının indisini döndürür.
+Verilen koşulu sağlayan ilk dizi elemanının indeksini döndürür.
 
 ### **Sözdizimi**
 ```
