@@ -169,3 +169,22 @@ arr.find((item, index, array) => { ... });
 // undefined
 ```
 ---
+## **Array.prototype.findIndex()**
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.findIndex](https://caniuse.com/#feat=mdn-javascript_builtins_array_findindex)
+
+Verilen koşulu sağlayan ilk dizi elemanının indisini döndürür.
+
+### **Sözdizimi**
+```
+arr.findIndex((item, index, array) => { ... });
+```
+
+### **Örnek**
+```js
+[1, 2, 3, 4, 5].findIndex(n => n > 3);
+// 3
+
+[1, 2, 3, 4, 5].findIndex(n => n > 5);
+// -1
+```
+---
