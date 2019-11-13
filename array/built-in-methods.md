@@ -131,3 +131,22 @@ Bir dizinin belirtilen elemanlarının verilen bir değer ile doldurmayı sağla
 [1, 2, 3, 4, 5].fill(0, 2, 4);
 // [1, 2, 0, 0, 5]
 ```
+---
+## **Array.prototype.filter()**
+
+Verilen koşulu sağlayan tüm dizi elemanlarından yeni bir dizi oluşturur. Dizinin kendisini değiştirmez.
+
+### **Sözdizimi**
+```
+arr.filter((item, index, array) => { ... });
+```
+
+### **Örnek**
+```js
+[1, 2, 3, 4, 5].filter(n => n < 3);
+// [1, 2]
+
+[1, 2, 3, 4, 5].filter(n => n > 3);
+// [4, 5]
+```
+---
