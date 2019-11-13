@@ -63,7 +63,7 @@ arr1.concat(arr2);
 ## **Array.prototype.copyWithin()**
 > IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.copyWithin](https://caniuse.com/#feat=mdn-javascript_builtins_array_copywithin)
 
-Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu değişmez.
+Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu değişmez. Dizinin kendisini değiştirir ve değişen diziyi döndürür.
 
 Üç parametre alır.
 
@@ -74,11 +74,10 @@ Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu
 - Üçüncüsü kopyalamanın sonlanacağı indis. Değer verilmezse dizinin son indisini alır. *(Opsiyonel)*
 
 ```js
-const arr = [1, 2, 3, 4, 5];
-arr.copyWithin(-2);
+[1, 2, 3, 4, 5].copyWithin(-2);
 // [1, 2, 3, 1, 2]
 
-arr.copyWithin(0, 3, 4);
+[1, 2, 3, 4, 5].copyWithin(0, 3, 4);
 // [4, 2, 3, 4, 5]
 ```
 ---
