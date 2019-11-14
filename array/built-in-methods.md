@@ -61,7 +61,7 @@ arr1.concat(arr2);
 ```
 ---
 ## **Array.prototype.copyWithin()**
-> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.copyWithin](https://caniuse.com/#feat=mdn-javascript_builtins_array_copywithin)
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - copyWithin](https://caniuse.com/#feat=mdn-javascript_builtins_array_copywithin)
 
 Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu değişmez. Dizinin kendisini değiştirir ve değişen diziyi döndürür.
 
@@ -82,7 +82,7 @@ Aynı dizinin içerisinde kopyalama yapmak için kullanılır. Dizinin uzunluğu
 ```
 ---
 ## **Array.prototype.entries()**
-> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.entries](https://caniuse.com/#feat=mdn-javascript_builtins_array_entries)
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - entries](https://caniuse.com/#feat=mdn-javascript_builtins_array_entries)
 
 Dizideki her eleman için indeks ve değer çiftini içeren bir Array Iterator nesnesi döndürür.
 
@@ -112,7 +112,7 @@ arr.every(item => item < 3);
 ```
 ---
 ## **Array.prototype.fill()**
-> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.fill](https://caniuse.com/#feat=mdn-javascript_builtins_array_fill)
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - fill](https://caniuse.com/#feat=mdn-javascript_builtins_array_fill)
 
 Bir dizinin belirtilen elemanlarının verilen bir değer ile doldurmayı sağlar. Dizinin kendisini değiştirir ve değişen diziyi return eder.
 
@@ -151,7 +151,7 @@ arr.filter((item, index, array) => { ... });
 ```
 ---
 ## **Array.prototype.find()**
-> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.find](https://caniuse.com/#feat=array-findl)
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - find](https://caniuse.com/#feat=array-findl)
 
 Verilen koşulu sağlayan ilk dizi elemanını döndürür.
 
@@ -170,7 +170,7 @@ arr.find((item, index, array) => { ... });
 ```
 ---
 ## **Array.prototype.findIndex()**
-> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - Array.findIndex](https://caniuse.com/#feat=mdn-javascript_builtins_array_findindex)
+> IE12 den itibaren desteklenir. Tarayıcı destekleri için: [Caniuse - findIndex](https://caniuse.com/#feat=mdn-javascript_builtins_array_findindex)
 
 Verilen koşulu sağlayan ilk dizi elemanının indeksini döndürür.
 
@@ -186,5 +186,21 @@ arr.findIndex((item, index, array) => { ... });
 
 [1, 2, 3, 4, 5].findIndex(n => n > 5);
 // -1
+```
+---
+## **Array.prototype.forEach()**
+Verilen işlevi dizinin her bir elemanı için bir kez çalıştırır. Mevcut diziyi değiştirmez ve geriye yeni bir dizi döndürmez.
+
+### **Sözdizimi**
+```
+arr.forEach((item, index, array) => { ... });
+```
+
+### **Örnek**
+```js
+[1, 2, 3].forEach(n => { console.log(n) });
+// > 1
+// > 2
+// > 3
 ```
 ---
