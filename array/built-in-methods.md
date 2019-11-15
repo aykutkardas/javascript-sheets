@@ -204,3 +204,22 @@ arr.forEach((item, index, array) => { ... });
 // > 3
 ```
 ---
+## **Array.prototype.inculdes()**
+> Tarayıcı destekleri için: [Caniuse - includes](https://caniuse.com/#feat=array-includes)
+
+Dizinin belirtilen elemanı içerip içermediğini verir. 
+
+### **Sözdizimi**
+```
+arr.includes(value);
+```
+
+### **Örnek**
+```js
+[1, 2, 3].includes(2);
+// true
+
+[1, 2, 3].includes(4);
+// false
+```
+---
