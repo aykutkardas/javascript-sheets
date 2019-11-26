@@ -225,7 +225,7 @@ arr.includes(value);
 ---
 ## **Array.prototype.indexOf()**
 
-Belirtilen elemanın dizideki ilk indeksini verir. Eğer aranan elemanı dizide bulamazsa **-1** değerini döndürür.
+Belirtilen elemanın dizide bulunduğu ilk konumun indeksini verir. Eğer aranan elemanı dizide bulamazsa **-1** değerini döndürür.
 
 ### **Sözdizimi**
 ```
@@ -238,6 +238,24 @@ arr.indexOf(value);
 // 2
 
 [1, 2, 3].indexOf(4);
+// -1
+```
+---
+## **Array.prototype.lastIndexOf()**
+
+Belirtilen elemanın dizide bulunduğu son konumun indeksini verir. Eğer aranan elemanı dizide bulamazsa **-1** değerini döndürür.
+
+### **Sözdizimi**
+```
+arr.lastIndexOf(value);
+```
+
+### **Örnek**
+```js
+[1, 2, 3, 1].lastIndexOf(1);
+// 3
+
+[1, 2, 3, 1].lastIndexOf(4);
 // -1
 ```
 ---
