@@ -223,3 +223,21 @@ arr.includes(value);
 // false
 ```
 ---
+## **Array.prototype.indexOf()**
+
+Belirtilen elemanın dizideki ilk indeksini verir. Eğer aranan elemanı dizide bulamazsa **-1** değerini döndürür.
+
+### **Sözdizimi**
+```
+arr.indexOf(value);
+```
+
+### **Örnek**
+```js
+[1, 2, 3].indexOf(3);
+// 2
+
+[1, 2, 3].indexOf(4);
+// -1
+```
+---
