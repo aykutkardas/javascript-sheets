@@ -259,3 +259,20 @@ arr.lastIndexOf(value);
 // -1
 ```
 ---
+## **Array.prototype.map()**
+
+Dizideki her eleman için çağrılan işlevi çalıştırır ve sonuçlarından yeni bir dizi döner. Mevcut diziyi değiştirmez.
+
+### **Sözdizimi**
+```
+arr.map((item, index) => { ... });
+```
+
+### **Örnek**
+```js
+[1, 2, 3].map(n => n + n);
+// [2, 4, 6]
+
+["a", "b", "c"].map((item, index) => index + item);
+// ["0a", "1b", "2c"]
+---
