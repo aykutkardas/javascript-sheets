@@ -275,4 +275,5 @@ arr.map((item, index) => { ... });
 
 ["a", "b", "c"].map((item, index) => index + item);
 // ["0a", "1b", "2c"]
+```
 ---
