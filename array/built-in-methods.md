@@ -324,3 +324,29 @@ console.log(arr);
 // ["a", "b", "c"]
 ```
 ---
+## **Array.prototype.pop()**
+
+Dizinin sonundan bir eleman çıkarır ve çıkardığı elamanı döndürür.
+
+### **Sözdizimi**
+```
+arr.pop();
+```
+
+### **Örnek**
+```js
+const arr = ["a", "b", "c"];
+
+arr.pop();
+// "c"
+
+console.log(arr);
+// ["a", "b"]
+
+arr.pop();
+// "b"
+
+console.log(arr);
+// ["a"]
+```
+---
