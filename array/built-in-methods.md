@@ -298,3 +298,29 @@ arr.join(separator?);
 // "1"
 ```
 ---
+## **Array.prototype.push()**
+
+Diziye bir veya daha fazla eleman ekler. Dizinin yeni uzunluğunu döndürür.
+
+### **Sözdizimi**
+```
+arr.push(eleman1, elaman2, ...elemanN);
+```
+
+### **Örnek**
+```js
+const arr = [];
+
+arr.push("a");
+// 1
+
+console.log(arr);
+// ["a"]
+
+arr.push("b", "c");
+// 3
+
+console.log(arr);
+// ["a", "b", "c"]
+```
+---
