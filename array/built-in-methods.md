@@ -300,7 +300,7 @@ arr.join(separator?);
 ---
 ## **Array.prototype.push()**
 
-Diziye bir veya daha fazla eleman ekler. Dizinin yeni uzunluğunu döndürür.
+Dizinin sonuna bir veya daha fazla eleman ekler. Dizinin yeni uzunluğunu döndürür.
 
 ### **Sözdizimi**
 ```
