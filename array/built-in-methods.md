@@ -350,3 +350,29 @@ console.log(arr);
 // ["a"]
 ```
 ---
+## **Array.prototype.shift()**
+
+Dizinin başından bir eleman çıkarır ve çıkardığı elamanı döndürür.
+
+### **Sözdizimi**
+```
+arr.shift();
+```
+
+### **Örnek**
+```js
+const arr = ["a", "b", "c"];
+
+arr.shift();
+// "a"
+
+console.log(arr);
+// ["b", "c"]
+
+arr.shift();
+// "b"
+
+console.log(arr);
+// ["c"]
+```
+---
