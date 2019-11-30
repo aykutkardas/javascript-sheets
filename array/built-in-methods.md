@@ -376,3 +376,29 @@ console.log(arr);
 // ["c"]
 ```
 ---
+## **Array.prototype.unshift()**
+
+Dizinin başına bir veya daha fazla eleman ekler. Dizinin yeni uzunluğunu döndürür.
+
+### **Sözdizimi**
+```
+arr.unshift(eleman1, elaman2, ...elemanN);
+```
+
+### **Örnek**
+```js
+const arr = ["a", "b", "c"];
+
+arr.unshift("d");
+// 4
+
+console.log(arr);
+// ["d", "a", "b", "c"]
+
+arr.unshift("e", "f");
+// 6
+
+console.log(arr);
+// ["e", "f", "d", "a", "b", "c"]
+```
+---
