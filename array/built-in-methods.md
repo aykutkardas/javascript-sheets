@@ -277,3 +277,24 @@ arr.map((item, index) => { ... });
 // ["0a", "1b", "2c"]
 ```
 ---
+## **Array.prototype.join()**
+
+Dizideki tüm elemanları virgül ile birleştirerek yeni bir dize döndürür. Özel bir ayırıcı da tanımlanabilir.
+
+### **Sözdizimi**
+```
+arr.join(separator?);
+```
+
+### **Örnek**
+```js
+[1, 2, 3].join();
+// "1,2,3"
+
+[1, 2, 3].join("-");
+// "1-2-3"
+
+[1].join();
+// "1"
+```
+---
