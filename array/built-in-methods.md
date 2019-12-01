@@ -402,3 +402,23 @@ console.log(arr);
 // ["e", "f", "d", "a", "b", "c"]
 ```
 ---
+## **Array.prototype.reduce()**
+
+Dizinin her öğesinde *reducer* bir işlev uygulayarak tek bir çıktı döndürür. 
+
+### **Sözdizimi**
+```
+arr.reduce((birikenDeger, mevcutDeger) => { ... }, baslangicDegeri?);
+```
+
+### **Örnek**
+```js
+const arr = [1, 2, 3];
+
+arr.reduce((total, current) => total + current); // 1 + 2 + 3
+// 6
+
+arr.reduce((total, current) => total + current, 4); // 4 + 1 + 2 + 3
+// 10
+```
+---
