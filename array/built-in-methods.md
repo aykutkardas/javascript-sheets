@@ -442,3 +442,20 @@ arr.reduceRight((total, current) => total + current, 4); // 4 + 3 + 2 + 1
 // 10
 ```
 ---
+## **Array.prototype.reverse()**
+
+Dizideki elemanların dizilimini tersine çevirir. Dizinin kendisini değiştirir. 
+
+### **Sözdizimi**
+```
+arr.reverse();
+```
+
+### **Örnek**
+```js
+const arr = [1, 2, 3];
+
+arr.reverse();
+// [3, 2, 1]
+```
+---
