@@ -422,3 +422,23 @@ arr.reduce((total, current) => total + current, 4); // 4 + 1 + 2 + 3
 // 10
 ```
 ---
+## **Array.prototype.reduceRight()**
+
+Sondan başlayarak dizinin her öğesinde *reducer* bir işlev uygulayarak tek bir çıktı döndürür. 
+
+### **Sözdizimi**
+```
+arr.reduceRight((birikenDeger, mevcutDeger) => { ... }, baslangicDegeri?);
+```
+
+### **Örnek**
+```js
+const arr = [1, 2, 3];
+
+arr.reduceRight((total, current) => total + current); // 3 + 2 + 1
+// 6
+
+arr.reduceRight((total, current) => total + current, 4); // 4 + 3 + 2 + 1
+// 10
+```
+---
