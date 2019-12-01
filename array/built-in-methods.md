@@ -459,3 +459,26 @@ arr.reverse();
 // [3, 2, 1]
 ```
 ---
+## **Array.prototype.slice()**
+
+Bir dizinin belirtilen aralığındaki elemanları alarak yeni bir dizi oluşturur. Mevcut diziyi değitirşmez.
+
+### **Sözdizimi**
+```
+arr.slice(begin, end?);
+```
+
+### **Örnek**
+```js
+const arr = [1, 2, 3, 4, 5];
+
+arr.slice(2);
+// [3, 4, 5]
+
+arr.slice(1, 3);
+// [2, 3]
+
+arr.slice(-3);
+// [3, 4, 5]
+```
+---
