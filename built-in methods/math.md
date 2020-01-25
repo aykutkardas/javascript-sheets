@@ -12,3 +12,13 @@ console.log((1 + (1/1000000)) ** 1000000);
 // 2.718280469 (yaklaşık olarak)
 ```
 ---
+
+## **Math.LN10**
+
+Math.LN10 özelliği, 10'un doğal logaritmasını temsil eder. Değeri yaklaşık  2.302 dir.
+
+```js
+console.log(Math.LN10);
+// 2.302585092994046
+```
+---
