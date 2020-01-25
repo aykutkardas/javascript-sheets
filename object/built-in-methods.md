@@ -39,3 +39,98 @@ ben.bilgiGoster();
 
 ```
 ---
+
+## **Object.defineProperties()**
+
+Nesneye bir özellik ekler ya da var olan bir özelliği değiştirir. Nesnenin kendisini döner.
+
+```js
+const nesne = {};
+
+Object.defineProperties(nesne, {
+  ozellik1: {
+    value: 1,
+  },
+  ozellik2: {}
+});
+
+console.log(nesne.ozellik1);
+// 1
+```
+
+**configurable:** Özellik tanımlayıcısının türü değiştirilebiliyor ya da özellik silinebiliyorsa `true` değerini kullanır. Varsayılan değeri `false` tur.
+
+#### Örnek
+```js
+const nesne = {};
+
+Object.defineProperties(nesne, {
+  ozellik1: {
+    value: 1,
+  },
+  ozellik2: {
+    value: 2,
+    configurable: true,
+  }
+});
+
+delete nesne.ozellik1;
+console.log(nesne.ozellik1);
+// 1
+
+delete nesne.ozellik2;
+console.log(nesne.ozellik2);
+// undefined
+```
+
+**enumerable:** Eğer `true` verilirse özelliğin numaralandırma sırasında görünmesini sağlar. Varsayılan değeri `false` tur.
+
+#### Örnek
+```js
+const nesne = {};
+
+Object.defineProperties(nesne, {
+  ozellik1: {
+    value: 1,
+  },
+  ozellik2: {
+    value: 2,
+    enumerable: true,
+  }
+});
+
+console.log(nesne);
+// { ozellik2: 2 }
+
+console.log(nesne.ozellik1);
+// 1
+```
+
+**value:** Özelliğe atanacak değer herhangi bir veri tipi olabilir. Varsayılan değeri `undefined` dır.
+
+**writable:** Değeri `true` ise özelliğin değerini değiştirilebilir yapar. Varsayılan değeri `false` tur.
+
+
+#### Örnek
+```js
+const nesne = {};
+
+Object.defineProperties(nesne, {
+  ozellik1: {
+    value: 1,
+  },
+  ozellik2: {
+    value: 2,
+    writable: true,
+  }
+});
+
+nesne.ozellik1 = 3;
+console.log(nesne.ozellik1);
+// 1
+
+nesne.ozellik2 = 4;
+console.log(nesne.ozellik2);
+// 4
+```
+---
