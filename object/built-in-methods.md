@@ -164,3 +164,25 @@ const nesne = { a: 1, b: 2 };
 Object.entries(nesne);
 // [ ["a", 1], ["b", 2] ]
 ```
+---
+
+## **Object.is()**
+
+İki değerin aynı olup olmadığını kontrol eder.
+
+```js
+Object.is('foo', 'foo');     // true
+Object.is(window, window);   // true
+Object.is('foo', 'bar');     // false
+Object.is([], []);           // false
+
+var foo = { a: 1 };
+var bar = { a: 1 };
+
+Object.is(foo, foo);         // true
+Object.is(foo, bar);         // false
+Object.is(null, null);       // true
+Object.is(0, -0);            // false
+Object.is(-0, -0);           // true
+Object.is(NaN, 0/0);         // true
+```
