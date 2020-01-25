@@ -229,3 +229,22 @@ console.log(nesne.ozellik1);
 // 2
 ```
 ---
+## **Object.freeze()**
+
+Verilen nesneyi dondurur. Bir nesneyi dondurmak ona yeni değerler eklemeyi, bir değeri silmeyi veya değerin `writable`, `enumerable`, `configurable` ve `value`, gibi değerlerinin değiştirilmesini engeller.
+
+```js
+const nesne = {
+  ozellik: 1
+};
+
+Object.freeze(nesne);
+
+nesne.ozellik = 2;
+// strict mod 'da hata fırlatır.
+
+console.log(nesne.ozellik);
+// 1
+
+```
+---
