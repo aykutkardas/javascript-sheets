@@ -186,3 +186,15 @@ Object.is(0, -0);            // false
 Object.is(-0, -0);           // true
 Object.is(NaN, 0/0);         // true
 ```
+
+## **Object.keys()**
+
+Nesnenin numaralandırılabilir (`enumerable`) tüm özelliklerinin isimlerini bir dizi olarak döner.
+
+```js
+const nesne = { a: 1, b: 2, c: 3 };
+
+Object.entries(nesne);
+// [ "a", "b", "c" ]
+```
+---
