@@ -2,7 +2,7 @@
 
 ## **Object.assign()**
 
-Bir veya daha fazla kaynak objeyi belirtilen bir hedef objeye kopyalar. Hedef objeyi döndürür.
+Bir veya daha fazla kaynak nesneyi belirtilen bir hedef nesneye kopyalar. Hedef nesneyi döndürür.
 
 ```js
 const hedef = { a: 1, b: 2 };
