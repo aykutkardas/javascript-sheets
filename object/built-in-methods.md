@@ -152,3 +152,15 @@ Object.defineProperty(nesne, "ozellik1", {
 console.log(nesne.ozellik1);
 // 1
 ```
+---
+
+## **Object.entries()**
+
+Nesnenin özellik ve değerlerini `[ozellik, deger]` gibi dizi şeklinde bir dizi de toplar.
+
+```js
+const nesne = { a: 1, b: 2 };
+
+Object.entries(nesne);
+// [ ["a", 1], ["b", 2] ]
+```
