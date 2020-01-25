@@ -22,3 +22,13 @@ console.log(Math.LN10);
 // 2.302585092994046
 ```
 ---
+
+## **Math.LN2**
+
+Math.LN2 özelliği, 2'nin doğal logaritmasını temsil eder. Değeri yaklaşık   0.693 dir.
+
+```js
+console.log(Math.LN2);
+// 0.6931471805599453
+```
+---
