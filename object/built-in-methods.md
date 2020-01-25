@@ -209,3 +209,23 @@ Object.values(nesne);
 // [ 1, 2, 3]
 ```
 ---
+## **Object.seal()**
+
+Verilen nesnenin tüm elemanlarını yapılandırılamaz (`configurable: false`) olarak işaretler ve nesneye yeni bir özellik eklenmesine izin vermez. Eğer özelliklerin değeri `writable: true` ise değerleri değiştirilebilir.
+
+```js
+const nesne = {
+  ozellik1: 1
+};
+
+Object.seal(nesne);
+nesne.ozellik1 = 2;
+console.log(nesne.ozellik1);
+// 2
+
+// Object.seal ile mühürlendiği için silinemez.
+delete nesne.ozellik1; 
+console.log(nesne.ozellik1);
+// 2
+```
+---
