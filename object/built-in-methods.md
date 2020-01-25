@@ -198,3 +198,14 @@ Object.keys(nesne);
 // [ "a", "b", "c" ]
 ```
 ---
+## **Object.values()**
+
+Nesnenin numaralandırılabilir (`enumerable`) tüm özelliklerinin değerlerini bir dizi olarak döner.
+
+```js
+const nesne = { a: 1, b: 2, c: 3 };
+
+Object.values(nesne);
+// [ 1, 2, 3]
+```
+---
