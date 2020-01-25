@@ -42,7 +42,7 @@ ben.bilgiGoster();
 
 ## **Object.defineProperties()**
 
-Nesneye bir özellik ekler ya da var olan bir özelliği değiştirir. Nesnenin kendisini döner.
+Nesneye birden fazla özellik ekler ya da varolan özellikleri değiştirir. Nesnenin kendisini döner.
 
 ```js
 const nesne = {};
@@ -134,3 +134,21 @@ console.log(nesne.ozellik2);
 // 4
 ```
 ---
+
+## **Object.defineProperty()**
+
+Nesneye bir özellik ekler ya da varolan bir özelliği değiştirir. Nesnenin kendisini döner.
+
+`Object.defineProperties` de olduğu gibi `enumerable`, `writable`, `configurable` ve `value` değerleri alır.
+
+```js
+const nesne = {};
+
+Object.defineProperty(nesne, "ozellik1", {
+    value: 1,
+    enumerable: true,
+});
+
+console.log(nesne.ozellik1);
+// 1
+```
