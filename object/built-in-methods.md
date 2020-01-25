@@ -194,7 +194,7 @@ Nesnenin numaralandırılabilir (`enumerable`) tüm özelliklerinin isimlerini b
 ```js
 const nesne = { a: 1, b: 2, c: 3 };
 
-Object.entries(nesne);
+Object.keys(nesne);
 // [ "a", "b", "c" ]
 ```
 ---
