@@ -43,6 +43,15 @@ console.log(Math.LOG10E);
 ```
 ---
 
+## **Math.LOG2E**
+
+Math.LOG2E özelliği, 2'nin temel logaritmasını temsil eder. Değeri yaklaşık 1.442 dir.
+
+```js
+console.log(Math.LOG2E);
+// 1.4426950408889634
+```
+---
 ## **Math.PI**
 
 Math.PI özelliği, pi sayısını temsil eder. Değeri yaklaşık 3.14159 dur.
