@@ -52,3 +52,13 @@ console.log(Math.PI);
 // 3.141592653589793
 ```
 ---
+
+## **Math.SQRT1_2**
+
+Math.SQRT1_2 özelliği, yaklaşık 0.707 olan 1/2 kare kökünü temsil eder.
+
+```js
+console.log(Math.SQRT1_2);
+// 0.7071067811865476
+```
+---
