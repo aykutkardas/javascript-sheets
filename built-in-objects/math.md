@@ -61,4 +61,13 @@ Math.SQRT1_2 özelliği, yaklaşık 0.707 olan 1/2 kare kökünü temsil eder.
 console.log(Math.SQRT1_2);
 // 0.7071067811865476
 ```
+
+## **Math.SQRT2**
+
+Math.SQRT2 özelliği 2'nin kare kökünü temsil eder. Değeri yaklaşık 1.414 dür.
+
+```js
+console.log(Math.SQRT2);
+// 1.4142135623730951
+```
 ---
