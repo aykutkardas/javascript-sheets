@@ -1,3 +1,30 @@
+# İçindekiler
+
+- [Array.from()](#arrayfrom)
+- [Array.isArray()](#arrayisarray)
+- [Array.of()](#arrayisarray)
+- [Array.prototype.concat()](#arrayprototypeconcat)
+- [Array.prototype.concat()](#arrayprototypecopywithin)
+- [Array.prototype.entries()](#arrayprototypeentries)
+- [Array.prototype.every()](#arrayprototypeevery)
+- [Array.prototype.fill()](#arrayprototypefill)
+- [Array.prototype.filter()](#arrayprototypefilter)
+- [Array.prototype.find()](#arrayprototypefind)
+- [Array.prototype.findIndex()](#arrayprototypefindindex)
+- [Array.prototype.forEach()](#arrayprototypeforeach)
+- [Array.prototype.inculdes()](#arrayprototypeinculdes)
+- [Array.prototype.indexOf()](#arrayprototypeindexof)
+- [Array.prototype.lastIndexOf()](#arrayprototypelastindexof)
+- [Array.prototype.map()](#arrayprototypemap)
+- [Array.prototype.join()](#arrayprototypejoin)
+- [Array.prototype.push()](#arrayprototypepush)
+- [Array.prototype.shift()](#arrayprototypeshift)
+- [Array.prototype.unshift()](#arrayprototypeunshift)
+- [Array.prototype.reduce()](#arrayprototypereduce)
+- [Array.prototype.reduceRight()](#arrayprototypereduceright)
+- [Array.prototype.reverse()](#arrayprototypereverse)
+- [Array.prototype.slice()](#arrayprototypeslice)
+
 # Array Built-In Metotlar
 
 ## **Array.from()**
