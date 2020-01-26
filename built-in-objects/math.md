@@ -35,7 +35,7 @@ console.log(Math.LN2);
 
 ## **Math.LOG10E**
 
-Math.LOG10E özelliği, e'nin temel 10 logaritmasını temsil eder Değeri yaklaşık   0.434: dir.
+Math.LOG10E özelliği, e'nin temel 10 logaritmasını temsil eder Değeri yaklaşık   0.434 dür.
 
 ```js
 console.log(Math.LOG10E);
