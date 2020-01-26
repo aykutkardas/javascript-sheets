@@ -15,7 +15,7 @@ console.log((1 + (1/1000000)) ** 1000000);
 
 ## **Math.LN10**
 
-Math.LN10 özelliği, 10'un doğal logaritmasını temsil eder. Değeri yaklaşık  2.302 dir.
+Math.LN10 özelliği, 10'un doğal logaritmasını temsil eder. Değeri yaklaşık 2.302 dir.
 
 ```js
 console.log(Math.LN10);
@@ -25,7 +25,7 @@ console.log(Math.LN10);
 
 ## **Math.LN2**
 
-Math.LN2 özelliği, 2'nin doğal logaritmasını temsil eder. Değeri yaklaşık   0.693 dir.
+Math.LN2 özelliği, 2'nin doğal logaritmasını temsil eder. Değeri yaklaşık 0.693 dür.
 
 ```js
 console.log(Math.LN2);
@@ -35,10 +35,20 @@ console.log(Math.LN2);
 
 ## **Math.LOG10E**
 
-Math.LOG10E özelliği, e'nin temel 10 logaritmasını temsil eder Değeri yaklaşık   0.434 dür.
+Math.LOG10E özelliği, e'nin temel 10 logaritmasını temsil eder. Değeri yaklaşık 0.434 dür.
 
 ```js
 console.log(Math.LOG10E);
 // 0.4342944819032518
+```
+---
+
+## **Math.PI**
+
+Math.PI özelliği, pi sayısını temsil eder. Değeri yaklaşık 3.14159 dur.
+
+```js
+console.log(Math.PI);
+// 3.141592653589793
 ```
 ---
