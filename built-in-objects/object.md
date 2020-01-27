@@ -304,3 +304,43 @@ Object.isFrozen(nesne);
 ```
 
 ---
+
+## **Object.preventExtensions()**
+
+Bu yöntem bir nesneye yeni özelliklerin eklenmesini önler. Önlenen bir nesneye `Object.defineProperty` ile özellik eklenmek istediğinde hata fırlatır. Eğer bir `try catch` bloğu içine alınmazsa kod çalışmayı durdurur.
+
+```js
+const nesne = {};
+
+Object.preventExtensions(nesne);
+
+try {
+  Object.defineProperty(nesne, 'ozellik1', {
+    value: 10
+  });
+} catch (e) {
+  console.log(e);
+  // TypeError: Cannot define property property1, object is not extensible
+}
+```
+
+---
+
+## **Object.isExtensible()**
+
+Bu yöntem bir nesneye yeni özelliklerin eklenebilir olup olmadığını kontrol eder.
+
+```js
+const nesne = {};
+
+Object.isExtensible(nesne);
+// true
+
+Object.preventExtensions(nesne);
+
+Object.isExtensible(nesne);
+// false
+
+```
+
+---
