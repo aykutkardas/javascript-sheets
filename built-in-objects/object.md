@@ -229,6 +229,29 @@ console.log(nesne.ozellik1);
 // 2
 ```
 ---
+
+
+## **Object.isSealed()**
+
+Bir neslenin `Object.seal()` ile mühürlenip mühürlenmediğini kontrol eder.
+
+```js
+const nesne = {
+  ozellik1: 10
+};
+
+Object.isSealed(nesne);
+// false
+
+Object.seal(nesne);
+
+Object.isSealed(nesne);
+// true
+
+```
+---
+
+
 ## **Object.freeze()**
 
 Verilen nesneyi dondurur. Bir nesneyi dondurmak ona yeni değerler eklemeyi, bir değeri silmeyi veya değerin `writable`, `enumerable`, `configurable` ve `value`, gibi değerlerinin değiştirilmesini engeller.
