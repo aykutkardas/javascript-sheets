@@ -11,6 +11,7 @@ const kaynak = { b: 4, c: 5 };
 const dondurulenHedef = Object.assign(hedef, kaynak);
 // { a: 1, b: 4, c: 5 }
 ```
+
 ---
 
 ## **Object.create()**
@@ -20,24 +21,27 @@ Varolan bir nesnenin prototipini, yeni oluşturulan nesne için kullanarak yeni 
 ```js
 const kisi = {
   insanMi: false,
-  bilgiGoster: function () {
-    console.log(`Benim adım ${this.isim}. Ben insan mıyım? ${this.insanMi ? 'Evet' : 'Hayır'}.`);
+  bilgiGoster: function() {
+    console.log(
+      `Benim adım ${this.isim}. Ben insan mıyım? ${
+        this.insanMi ? "Evet" : "Hayır"
+      }.`
+    );
   }
 };
 
-
 const ben = Object.create(kisi);
 
-// isim özelliği ben nesnesi için tanımlanmış 
+// isim özelliği ben nesnesi için tanımlanmış
 // fakat kisi nesnesi için tanımlanmamış bir özelliktir.
-ben.isim = "John"; 
+ben.isim = "John";
 ben.insanMi = true;
 
 ben.bilgiGoster();
 
 // Benim adım John. Ben insan mıyım? Evet.
-
 ```
+
 ---
 
 ## **Object.defineProperties()**
@@ -49,7 +53,7 @@ const nesne = {};
 
 Object.defineProperties(nesne, {
   ozellik1: {
-    value: 1,
+    value: 1
   },
   ozellik2: {}
 });
@@ -61,16 +65,17 @@ console.log(nesne.ozellik1);
 **configurable:** Özellik tanımlayıcısının türü değiştirilebiliyor ya da özellik silinebiliyorsa `true` değerini kullanır. Varsayılan değeri `false` tur.
 
 #### Örnek
+
 ```js
 const nesne = {};
 
 Object.defineProperties(nesne, {
   ozellik1: {
-    value: 1,
+    value: 1
   },
   ozellik2: {
     value: 2,
-    configurable: true,
+    configurable: true
   }
 });
 
@@ -86,16 +91,17 @@ console.log(nesne.ozellik2);
 **enumerable:** Eğer `true` verilirse özelliğin numaralandırma sırasında görünmesini sağlar. Varsayılan değeri `false` tur.
 
 #### Örnek
+
 ```js
 const nesne = {};
 
 Object.defineProperties(nesne, {
   ozellik1: {
-    value: 1,
+    value: 1
   },
   ozellik2: {
     value: 2,
-    enumerable: true,
+    enumerable: true
   }
 });
 
@@ -110,18 +116,18 @@ console.log(nesne.ozellik1);
 
 **writable:** Değeri `true` ise özelliğin değerini değiştirilebilir yapar. Varsayılan değeri `false` tur.
 
-
 #### Örnek
+
 ```js
 const nesne = {};
 
 Object.defineProperties(nesne, {
   ozellik1: {
-    value: 1,
+    value: 1
   },
   ozellik2: {
     value: 2,
-    writable: true,
+    writable: true
   }
 });
 
@@ -133,6 +139,7 @@ nesne.ozellik2 = 4;
 console.log(nesne.ozellik2);
 // 4
 ```
+
 ---
 
 ## **Object.defineProperty()**
@@ -145,13 +152,14 @@ Nesneye bir özellik ekler ya da varolan bir özelliği değiştirir. Nesnenin k
 const nesne = {};
 
 Object.defineProperty(nesne, "ozellik1", {
-    value: 1,
-    enumerable: true,
+  value: 1,
+  enumerable: true
 });
 
 console.log(nesne.ozellik1);
 // 1
 ```
+
 ---
 
 ## **Object.entries()**
@@ -164,6 +172,7 @@ const nesne = { a: 1, b: 2 };
 Object.entries(nesne);
 // [ ["a", 1], ["b", 2] ]
 ```
+
 ---
 
 ## **Object.is()**
@@ -171,20 +180,20 @@ Object.entries(nesne);
 İki değerin aynı olup olmadığını kontrol eder.
 
 ```js
-Object.is('foo', 'foo');     // true
-Object.is(window, window);   // true
-Object.is('foo', 'bar');     // false
-Object.is([], []);           // false
+Object.is("foo", "foo"); // true
+Object.is(window, window); // true
+Object.is("foo", "bar"); // false
+Object.is([], []); // false
 
 var foo = { a: 1 };
 var bar = { a: 1 };
 
-Object.is(foo, foo);         // true
-Object.is(foo, bar);         // false
-Object.is(null, null);       // true
-Object.is(0, -0);            // false
-Object.is(-0, -0);           // true
-Object.is(NaN, 0/0);         // true
+Object.is(foo, foo); // true
+Object.is(foo, bar); // false
+Object.is(null, null); // true
+Object.is(0, -0); // false
+Object.is(-0, -0); // true
+Object.is(NaN, 0 / 0); // true
 ```
 
 ## **Object.keys()**
@@ -197,7 +206,9 @@ const nesne = { a: 1, b: 2, c: 3 };
 Object.keys(nesne);
 // [ "a", "b", "c" ]
 ```
+
 ---
+
 ## **Object.values()**
 
 Nesnenin numaralandırılabilir (`enumerable`) tüm özelliklerinin değerlerini bir dizi olarak döner.
@@ -208,7 +219,9 @@ const nesne = { a: 1, b: 2, c: 3 };
 Object.values(nesne);
 // [ 1, 2, 3]
 ```
+
 ---
+
 ## **Object.seal()**
 
 Verilen nesnenin tüm elemanlarını yapılandırılamaz (`configurable: false`) olarak işaretler ve nesneye yeni bir özellik eklenmesine izin vermez. Eğer özelliklerin değeri `writable: true` ise değerleri değiştirilebilir.
@@ -224,12 +237,12 @@ console.log(nesne.ozellik1);
 // 2
 
 // Object.seal ile mühürlendiği için silinemez.
-delete nesne.ozellik1; 
+delete nesne.ozellik1;
 console.log(nesne.ozellik1);
 // 2
 ```
----
 
+---
 
 ## **Object.isSealed()**
 
@@ -247,10 +260,9 @@ Object.seal(nesne);
 
 Object.isSealed(nesne);
 // true
-
 ```
----
 
+---
 
 ## **Object.freeze()**
 
@@ -268,6 +280,27 @@ nesne.ozellik = 2;
 
 console.log(nesne.ozellik);
 // 1
-
 ```
+
+---
+
+## **Object.isFrozen()**
+
+Bir neslenin `Object.freeze()` ile dondurulup dondurulmadığını kontrol eder.
+
+
+```js
+const nesne = {
+  ozellik1: 10
+};
+
+Object.isFrozen(nesne);
+// false
+
+Object.freeze(nesne);
+
+Object.isFrozen(nesne);
+// true
+```
+
 ---
