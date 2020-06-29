@@ -7,6 +7,7 @@
 - [Array.prototype.concat()](#arrayprototypecopywithin)
 - [Array.prototype.entries()](#arrayprototypeentries)
 - [Array.prototype.every()](#arrayprototypeevery)
+- [Array.prototype.some()](#arrayprototypesome)
 - [Array.prototype.fill()](#arrayprototypefill)
 - [Array.prototype.filter()](#arrayprototypefilter)
 - [Array.prototype.find()](#arrayprototypefind)
@@ -135,6 +136,20 @@ arr.every(item => item < 10);
 // true
 
 arr.every(item => item < 3);
+// false
+```
+---
+## **Array.prototype.some()**
+
+Dizide ki harhangi bir elemanın belirtilen koşulu sağlayıp sağlamadığını kontrol eder. Boolean bir değer döndürür.
+
+```js
+const arr = [1, 2, 3, 4, 5];
+
+arr.some(item => item < 2);
+// true
+
+arr.some(item => item > 5);
 // false
 ```
 ---
