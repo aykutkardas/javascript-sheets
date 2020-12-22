@@ -13,7 +13,7 @@
 - [Array.prototype.find()](#arrayprototypefind)
 - [Array.prototype.findIndex()](#arrayprototypefindindex)
 - [Array.prototype.forEach()](#arrayprototypeforeach)
-- [Array.prototype.inculdes()](#arrayprototypeinculdes)
+- [Array.prototype.includes()](#arrayprototypeincludes)
 - [Array.prototype.indexOf()](#arrayprototypeindexof)
 - [Array.prototype.lastIndexOf()](#arrayprototypelastindexof)
 - [Array.prototype.map()](#arrayprototypemap)
@@ -246,7 +246,7 @@ arr.forEach((item, index, array) => { ... });
 // > 3
 ```
 ---
-## **Array.prototype.inculdes()**
+## **Array.prototype.includes()**
 > Tarayıcı destekleri için: [Caniuse - includes](https://caniuse.com/#feat=array-includes)
 
 Dizinin belirtilen elemanı içerip içermediğini verir. 
